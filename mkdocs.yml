@@ -1,0 +1,426 @@
+strict: true
+site_name: Sematext Documentation
+site_url: https://sematext.com/docs/
+pages:
+    - Getting Started: index.md
+    - User Guide:
+      - What is an App?: guide/app-guide.md
+      - Integrations Guide: guide/integrations-guide.md
+      # - Logs Guide: guide/logs-guide.md
+      # - Monitoring Guide: guide/monitoring-guide.md
+      - Alerts Guide: guide/alerts-guide.md
+      - Events Guide: guide/events-guide.md
+      # - Dashboards Guide: guide/dashboards-guide.md
+      - Connected Apps: guide/connected-apps.md
+      - Split Screen: guide/split-screen.md
+      - Saved Views: guide/saved-views.md
+      - Scheduled Reports: guide/scheduled-reports.md      
+    - Logs:
+      - Overview: logs/index.md
+      - Quick Start: logs/quick-start.md
+      - Settings: logs/settings.md
+      - Reports & Components: logs/reports-and-components.md
+      - Logs Table Quick Actions: logs/logs-table-quick-actions.md
+      - Sending Log Events:
+        - Overview: logs/sending-log-events.md
+        - Using Elasticsearch API: logs/index-events-via-elasticsearch-api.md
+        - Fluent Bit: logs/fluentbit.md
+        - Logagent: logs/logagent.md
+        - Logstash: logs/logstash.md
+        - Syslog:
+          - Overview: logs/syslog.md
+          - JSON Messages over Syslog: logs/json-messages-over-syslog.md
+          - rsyslog: logs/rsyslog.md
+          - syslogd: logs/syslogd.md
+          - syslog-ng: logs/syslog-ng.md
+          - Authorizing IPs for Syslog: logs/authorizing-ips-for-syslog.md
+          - JSON: logs/json.md
+        - Sending Container Logs:
+          - Docker: logs/sending-docker-logs.md
+      - Searching Log Events:
+        - Overview: logs/searching-log-events.md
+        - Logsene CLI: logs/logsene-cli.md
+        - Search Syntax: logs/search-syntax.md
+        - Using Elasticsearch API: logs/search-through-the-elasticsearch-api.md
+        - Kibana: logs/kibana.md
+      - Fields: logs/fields.md
+      - Field Types: logs/field-types.md
+      - Supported Date Formats: logs/supported-date-formats.md
+      - Mappings and Templates: logs/mappings-templates.md
+      - Pipelines: logs/pipelines.md
+      - Archiving: logs/archiving.md
+      - Discovery:
+        - Overview: logs/discovery/intro.md
+        - Setup: logs/discovery/setup.md
+        - Control Plane: logs/discovery/control-plane.md
+        - Shipping Log Files: logs/discovery/tailing-log-files.md
+        - Shipping Containers Logs: logs/discovery/tailing-containers.md
+        - Shipping Kubernetes Logs: logs/discovery/tailing-k8s-logs.md
+        - Shipping Journald Logs: logs/discovery/tailing-journald-logs.md
+      - Correlation: logs/correlation.md
+      - Changelog: changelog.md
+      - FAQ: logs/faq.md
+    - Monitoring:
+      - Overview: monitoring/index.md
+      - Quick Start: monitoring/quick-start.md
+      - Autodiscovery: monitoring/autodiscovery.md
+      - Settings: monitoring/settings.md
+      - Reports & Components: monitoring/reports-and-components.md
+      - Infrastructure: monitoring/infrastructure.md
+      - Servers: monitoring/servers.md
+      - Containers: monitoring/containers.md
+      - Inventory: monitoring/inventory.md
+      - Processes: monitoring/processes.md
+      - Network Map: monitoring/network-map.md
+      - On Demand Profiling: monitoring/on-demand-profiling.md
+      - Correlation: monitoring/correlation.md
+      - Tags: monitoring/tags.md
+      - Custom Metrics: monitoring/custom-metrics.md
+      - JMX Monitoring: monitoring/manually-setting-jmx-containers.md
+      - Changelog: changelog.md
+      - FAQ: monitoring/spm-faq.md
+    - Experience:
+      - Overview: experience/index.md
+      - Getting Started: experience/getting-started.md
+      - URL Groups: experience/url-groups.md
+      - Configure Apdex: experience/configure-requirements.md
+      - User Satisfaction: experience/user-satisfaction.md
+      - Performance Measurements: experience/measurements.md
+      - User Identification: experience/user-identification.md
+      - Tags: experience/tags.md
+      - Resource Timing: experience/resources.md
+      - Timing Breakdown: experience/breakdown.md
+      - Long Tasks: experience/longtasks.md
+      - Element Timing: experience/element-timing.md
+      - Web Vitals: experience/webvitals.md
+      - Browser Memory: experience/browser-memory.md
+      - Integrations: experience/integrations.md
+      - Browser SDK: agents/browser.md
+      - Sampling: experience/sampling.md
+      - Correlation: experience/correlation.md
+      - Changelog: changelog.md
+      - FAQ: experience/faq.md
+    - Synthetics:
+      - Overview: synthetics/index.md
+      - Getting Started: synthetics/getting-started.md
+      - HTTP Monitor: synthetics/http-monitor.md
+      - Browser Monitor: synthetics/browser-monitor.md
+      - User Journey Scripts: synthetics/user-journey-scripts.md
+      - SSL Certificate Monitoring: synthetics/ssl-certificate-monitoring.md
+      - CI/CD Integration:
+        - Overview: synthetics/ci-cd/overview.md
+        - Jenkins: synthetics/ci-cd/jenkins.md
+        - Travis CI: synthetics/ci-cd/travis-ci.md
+        - Circle CI: synthetics/ci-cd/circle-ci.md
+        - GitHub Actions: synthetics/ci-cd/github-actions.md
+        - Bitbucket Pipelines: synthetics/ci-cd/bitbucket-pipelines.md
+        - GitLab CI/CD: synthetics/ci-cd/gitlab-ci-cd.md
+        - Vercel: synthetics/ci-cd/vercel.md
+        - Netlify: synthetics/ci-cd/netlify.md
+      - Status Pages: synthetics/status-pages.md
+      - Private Locations: synthetics/private-locations.md
+      - Metrics: synthetics/metrics.md
+      - Correlation: synthetics/correlation.md
+      - Using the API: synthetics/using-the-api.md
+      - Changelog: changelog.md
+      - FAQ: synthetics/faq.md
+    - Integrations:
+      - Overview: integration/index.md
+      - Monitoring:
+        - Akka: integration/akka.md
+        - Apache: integration/apache.md
+        - AWS: integration/aws.md
+        - Cassandra: integration/cassandra.md
+        - ClickHouse: integration/clickhouse.md
+        - Couchbase: integration/couchbase.md
+        - Docker: integration/docker.md
+        - Elasticsearch: integration/elasticsearch.md
+        - Express.js: integration/express.js.md
+        - Hadoop: integration/hadoop.md
+        - HAProxy: integration/haproxy.md
+        - HBase: integration/hbase.md
+        - Infra: integration/infra.md
+        - Jenkins: integration/jenkins.md
+        - JVM: integration/jvm.md
+        - Kafka: integration/kafka.md
+        - Kubernetes: integration/kubernetes.md
+        - MySQL: integration/mysql.md
+        - MongoDB: integration/mongodb.md
+        - Nginx: integration/nginx.md
+        - Nginx Plus: integration/nginxplus.md
+        - Node.js: integration/node.js.md
+        - OpenSearch: integration/opensearch.md
+        - PHP: integration/php.md
+        - PostgreSQL: integration/postgresql.md
+        - RabbitMQ: integration/rabbitmq.md
+        - Redis: integration/redis.md
+        - Solr: integration/solr.md
+        - SolrCloud: integration/solrcloud.md
+        - Spark: integration/spark.md
+        - Storm: integration/storm.md
+        - Tomcat: integration/tomcat.md
+        - ZooKeeper: integration/zookeeper.md
+      - Logs:
+        - Generic Logs: integration/generic-logs-integration.md
+        - Apache Logs: integration/apache-logs.md
+        - AWS ECS: integration/ecs-logs.md
+        - Elasticsearch: integration/elasticsearch-logs.md
+        - GitHub Webhook Events: integration/github-webhook-events-integration.md
+        - IBM Cloud Kubernetes Logs: integration/ibm-cloud-kubernetes-logs.md
+        - JVM Garbage Collection: integration/jvm-gc-logs.md
+        - Kubernetes Audit: integration/kubernetes-audit-integration.md
+        - Linux Journald: integration/journald-integration.md
+        - Mobile Apps Logs: integration/mobile-apps-logs.md
+        - Nginx Logs: integration/nginx-logs.md
+        - PostgreSQL: integration/postgresql-logs.md
+        - RabbitMQ: integration/rabbitmq-logs.md
+        - Solr: integration/solr-logs.md
+        - Vercel: integration/vercel-logs-integration.md
+      - Notification Hooks:
+        - Custom Webhooks: integration/alerts-webhooks-integration.md
+        - Big Panda: integration/alerts-bigpanda-integration.md
+        - Email: integration/alerts-email-integration.md
+        - Google Chat: integration/alerts-googlechat-integration.md
+        - HipChat: integration/alerts-hipchat-integration.md
+        - Nagios: integration/alerts-nagios-integration.md
+        - OpsGenie: integration/alerts-opsgenie-integration.md
+        - PagerDuty: integration/alerts-pagerduty-integration.md
+        - Pushover: integration/alerts-pushover-integration.md
+        - ServiceNow: integration/alerts-servicenow-integration.md
+        - SIGNL4: integration/alerts-signl4-integration.md
+        - Slack: integration/alerts-slack-integration.md
+        - SMS/text: integration/alerts-sms-integration.md
+        - Spike.sh: integration/alerts-spikesh-integration.md
+        - Squadcast: integration/alerts-squadcast-integration.md
+        - Teams: integration/alerts-microsoft-teams-integration.md
+        - Telegram: integration/alerts-telegram-integration.md
+        - Twilio: integration/alerts-twilio-integration.md
+        - VictorOps: integration/alerts-victorops-integration.md
+        - Zapier: integration/alerts-zapier-integration.md
+        - AlertOps: integration/alerts-alertops-integration.md
+        - Custom Params: integration/alerts-webhooks-custom-params.md
+      - Orchestration:
+        - Terraform: integration/terraform.md
+      - Synthetics:
+        - Vercel: integration/vercel-synthetics-integration.md
+    - Alerts:
+      - Overview: alerts/index.md
+      - Creating Logs Alerts: alerts/creating-logs-alerts.md
+      - Creating Metrics Alerts: alerts/creating-metrics-alerts.md
+      - Creating Heartbeat Alerts: alerts/creating-heartbeat-alerts.md
+      - Creating Experience Alerts: alerts/creating-experience-alerts.md
+      - Creating Synthetics Alerts: alerts/creating-synthetics-alerts.md
+      - Alerts Meta and Tags: alerts/alerts-meta.md
+      - Alert Notifications: alerts/alert-notifications.md
+      - Alert Recipients: alerts/alert-recipients.md
+      - Account-default Hooks: alerts/account-default-hooks.md
+      - Alert Scheduling: alerts/alert-scheduling.md
+      - Default Alerts: alerts/default-alerts.md
+      - Alert Events: alerts/alert-events.md
+    - Events:
+      - Overview: events/index.md
+      - Adding Events: events/adding.md
+      - Timeline/Histogram: events/timeline.md
+      - Correlation: events/correlation.md
+    - Dashboards:
+      - Overview: dashboards/index.md
+      - Quick Start: dashboards/quick-start.md
+      - Settings: dashboards/settings.md
+      - Reports and Components: dashboards/reports-and-components.md
+      - Chart Builder: dashboards/chart-builder.md
+      - Report Variables: dashboards/report-variables.md
+    - Tags:
+      - Overview: tags/index.md
+      - Custom Tags: tags/custom-tags.md
+      - Common Schema: tags/common-schema.md
+    - Team:
+      - Overview: team/index.md
+      - Account Members: team/account-members.md
+      - App Guests: team/app-guests.md
+      - Transfer Apps: team/transfer-apps.md
+      - User Roles: team/user-roles.md
+    - Agents:
+      - Overview: agents/index.md
+      - Sematext Agent:
+        - Overview: agents/sematext-agent/index.md
+        - Installation:
+          - Linux: agents/sematext-agent/installation.md
+          - Docker: agents/sematext-agent/containers/installation.md
+          - Kubernetes:
+            - Installation: agents/sematext-agent/kubernetes/installation.md
+            - Helm Chart: agents/sematext-agent/kubernetes/helm.md
+            - Operator: agents/sematext-agent/kubernetes/operator.md
+          - Chef Recipe: agents/sematext-agent/chef-recipe.md
+          - Permission requirements: agents/sematext-agent/permission-requirements.md
+        - Starting/stopping: agents/sematext-agent/starting-stopping.md
+        - OS Metrics: agents/sematext-agent/os-metrics.md
+        - App Agent:
+          - Overview:  agents/sematext-agent/app-agent/index.md
+          - Embedded Mode: agents/sematext-agent/app-agent/spm-monitor-javaagent.md
+          - Standalone Mode: agents/sematext-agent/app-agent/spm-monitor-standalone.md
+          - Switching Modes: agents/sematext-agent/app-agent/spm-monitor-switching-modes.md
+        - Containers:
+          - Configuration: agents/sematext-agent/containers/configuration.md
+          - Metrics: agents/sematext-agent/containers/metrics.md
+          - Metadata: agents/sematext-agent/containers/metadata.md
+          - Events: agents/sematext-agent/containers/events.md
+        - Kubernetes:
+          - Configuration: agents/sematext-agent/kubernetes/configuration.md
+          - Metrics: agents/sematext-agent/kubernetes/metrics.md
+          - Events: agents/sematext-agent/kubernetes/events.md
+        - Processes:
+          - Configuration: agents/sematext-agent/processes/configuration.md
+          - Metrics: agents/sematext-agent/processes/metrics.md
+          - Metadata: agents/sematext-agent/processes/metadata.md
+          - Sensitive Data: agents/sematext-agent/processes/sensitive-data.md
+        - Packages:
+          - Configuration: agents/sematext-agent/packages/configuration.md
+          - Data: agents/sematext-agent/packages/data.md
+        - Autodiscovery:
+          - Removing stale resources: agents/sematext-agent/autodisco/removing-stale-resources.md
+          - JMX Attaching: agents/sematext-agent/jmx-attaching.md
+          - MySQL driver: agents/sematext-agent/autodisco/mysql-driver.md
+          - Credential sets:  agents/sematext-agent/autodisco/credential-sets.md
+          - Resource limits: agents/sematext-agent/autodisco/resource-limits.md
+        - Troubleshooting: agents/sematext-agent/agent-troubleshooting.md
+        - Release Notes: agents/sematext-agent/releasenotes.md
+      - Node.js Agent: agents/node-agent.md
+      - Logagent:
+        - Overview: logagent/index.md
+        - Installation:
+          - Linux: logagent/installation.md
+          - Docker: logagent/installation-docker.md
+          - Kubernetes: logagent/installation-kubernetes.md
+          - Helm: logagent/installation-helm.md
+          - Mac: logagent/installation-mac.md
+          - Windows: logagent/installation-windows.md
+          - Heroku: logagent/installation-heroku.md
+        - Usage:
+          - Configuration File: logagent/config-file.md
+          - Command Line Parameters: logagent/cli-parameters.md
+          - Container Configuration Parameters: logagent/container-config-parameters.md
+          - Container Configuration Manual: logagent/container-config-manual.md
+          - Log Parser Patterns: logagent/parser.md
+          - Monitoring: logagent/monitoring.md
+        - Plugins:
+          - Overview: logagent/plugins.md
+          - About filters: logagent/filters.md
+          - Input Filter:
+            - Grep input filter: logagent/input-filter-grep.md
+            - Grok input filter: logagent/input-filter-grok.md
+            - Kubernetes cri-o logs: logagent/input-filter-containerd.md
+          - Input Plugins:
+            - Standard input: logagent/input-plugin-stdin.md
+            - File input: logagent/input-plugin-files.md
+            - Docker logs input: logagent/input-plugin-dockerlogs.md
+            - Syslog input: logagent/input-plugin-syslog.md
+            - Journald input: logagent/input-plugin-journald-upload.md
+            - Apache Kafka input: logagent/input-plugin-kafka.md
+            - InfluxDB input: logagent/input-plugin-influxdb-http.md
+            - TCP input: logagent/input-plugin-tcp.md
+            - MQTT client input: logagent/input-plugin-mqtt-client.md
+            - MQTT broker input: logagent/input-plugin-mqtt-broker.md
+            - GELF input: logagent/input-plugin-gelf.md
+            - Command input: logagent/input-plugin-command.md
+            - Elasticsearch HTTP: logagent/input-plugin-elasticsearch-http.md
+            - Elasticsearch query: logagent/input-plugin-elasticsearch-query.md
+            - MSSQL query: logagent/input-plugin-mssql.md
+            - MySql query: logagent/input-plugin-mysql.md
+            - Cassandra query: logagent/input-plugin-cassandra.md
+            - ZeroMQ input: logagent/input-plugin-zeromq.md
+            - Postgresql query: logagent/input-plugin-postgresql.md
+            - Apple device location: logagent/logagent-apple-location.md
+            - Nova dust sensor: logagent/logagent-novasds.md
+            - Cloud Foundry input: logagent/input-plugin-cloudfoundry.md
+            - Azure Event Hub: logagent/input-plugin-azure-eventhub.md
+            - Kubernetes Events: logagent/input-kubernetes-events.md
+            - Kubernetes Audit Logs: logagent/input-kubernetes-audit.md
+            - GitHub Webhook Events: logagent/input-github-webhook.md
+          - Output Filter:
+            - SQL output filter: logagent/output-filter-sql.md
+            - AES encrypt fields: logagent/output-filter-aesencryptfields.md
+            - Hash fields: logagent/output-filter-hashfields.md
+            - Remove fields: logagent/output-filter-removefields.md
+            - Rename fields: logagent/output-filter-renamefields.md
+            - Drop events: logagent/output-filter-dropevents.md
+            - IP truncate fields: logagent/output-filter-iptruncatefields.md
+            - Docker enrichment: logagent/output-filter-dockerenrichment.md
+            - Kubernetes enrichment: logagent/output-filter-kubernetes.md
+            - Geo-IP enrichment: logagent/output-filter-geoip.md
+          - Output Plugins:
+            - Standard output: logagent/output-plugin-stdout.md
+            - GELF: logagent/output-plugin-gelf.md
+            - MQTT: logagent/output-plugin-mqtt.md
+            - Files: logagent/output-plugin-files.md
+            - Elasticsearch: logagent/output-elasticsearch.md
+            - Amazon Elasticsearch: logagent/output-plugin-aws-elasticsearch.md
+            - InfluxDB: logagent/output-plugin-influxdb.md
+            - Apache Kafka: logagent/output-plugin-kafka.md
+            - ZeroMQ: logagent/output-plugin-zeromq.md
+            - ClickHouse DB: logagent/output-plugin-clickhouse.md
+            - Slack Webhook: logagent/output-plugin-slack.md
+            - Prometheus Alertmanager: logagent/output-plugin-prometheus-alertmanager.md
+            - HTTP post: logagent/output-plugin-http.md
+        - How-To:
+            - Exclude Log Sources with Glob Patterns: logagent/how-to-use-glob-patterns-to-exclude-logs.md
+            - Nginx Ingress Log Shipping: logagent/how-to-nginx-ingress-log-shipping.md
+            - GDPR Personal Data In Web Server Logs: logagent/how-to-gdpr_web_logs.md
+            - Centralize Linux System Journal: logagent/how-to-centralize-linux-system-journal.md
+            - Reduce Log Volume: logagent/how-to-reduce-log-volume.md
+            - IDE Integration and Debugging: logagent/logagent-ide-conf.md
+        - Changelog: logagent/changelog.md
+        - Release Notes: logagent/releasenotes.md
+        - FAQ: logagent/faq.md
+      - Mobile App SDKs: agents/mobile.md
+      - Browser SDK: agents/browser.md
+    - Fleet: fleet/index.md
+    - API: api/index.md
+    - FAQ: faq.md
+
+
+theme:
+  name: material
+  custom_dir: 'mkdocs-material-custom'
+repo_url: https://github.com/sematext/docs/
+edit_uri: edit/master/docs/
+# Options
+extra:
+  logo: 'images/logo.svg'
+  palette:
+    primary: 'Indigo'
+    accent: 'Indigo'
+  font:
+    text: 'Roboto,sans-serif'
+  social:
+    - type: 'github'
+      link: 'https://github.com/sematext'
+    - type: 'twitter'
+      link: 'https://twitter.com/sematext'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/sematext-international-llc'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/Sematext'
+    - type: 'slideshare'
+      link: 'https://www.slideshare.net/sematext'
+    - type: 'feed'
+      link: 'https://feeds.feedburner.com/SematextBlog'
+
+extra_css:
+  - 'stylesheets/extra.css'
+  - 'stylesheets/code-tabs.css'
+
+extra_javascript:
+  - 'javascripts/extra.js'
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - codehilite
+  - meta
+  - admonition
+  - pymdownx.superfences:
+# upgrade to pymdownx 4.10... first      preserve_tabs: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - markdown_fenced_code_tabs:
+      single_block_as_tab: False
